@@ -1,0 +1,21 @@
+﻿{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Senin Adın",
+  "classifications": [ "Web API", "CQRS", "Microservices" ],
+  "identity": "MyProjectTemplate",
+  "name": "MyProjectTemplate",
+  "shortName": "mytemplate",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "MyProjectTemplate",
+  "preferNameDirectory": true,
+  "symbols": {
+    "ProjectName": {
+      "type": "string",
+      "defaultValue": "MyProject",
+      "replaces": "MyProjectTemplate"
+    }
+  }
+}
