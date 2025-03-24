@@ -58,6 +58,10 @@
               "target": "Package",
               "version": "[14.0.0, )"
             },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.11.0, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[12.4.1, )"
@@ -438,6 +442,10 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.1, )"
+            },
+            "Scalar.AspNetCore": {
+              "target": "Package",
+              "version": "[2.1.1, )"
             }
           },
           "imports": [

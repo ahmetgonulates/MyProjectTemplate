@@ -13,7 +13,7 @@ public class JwtTokenService(IOptions<JwtSettings> jwtSettings) : ITokenService
 {
     private readonly JwtSettings _jwtSettings = jwtSettings.Value;
 
-    public string CreateAccessToken(List<Claim> claims = null)
+    public string CreateAccessToken(List<Claim> claims)
     {
         var symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSettings.Key));
         var credentials = new SigningCredentials(symmetricSecurityKey, SecurityAlgorithms.HmacSha256);

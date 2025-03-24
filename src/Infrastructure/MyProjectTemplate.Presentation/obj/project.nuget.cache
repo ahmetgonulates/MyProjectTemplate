@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "2KIbJEji6kM=",
+  "dgSpecHash": "RnwO+HECMKQ=",
   "success": true,
   "projectFilePath": "C:\\ATG\\Calismalar\\MyProjectTemplate\\src\\Infrastructure\\MyProjectTemplate.Presentation\\MyProjectTemplate.Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gonul\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
+    "C:\\Users\\gonul\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512",
     "C:\\Users\\gonul\\.nuget\\packages\\mediatr\\12.4.1\\mediatr.12.4.1.nupkg.sha512",
     "C:\\Users\\gonul\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\gonul\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.3.0\\microsoft.aspnetcore.authentication.abstractions.2.3.0.nupkg.sha512",

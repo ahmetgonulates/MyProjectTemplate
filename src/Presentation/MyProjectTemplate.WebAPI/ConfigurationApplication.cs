@@ -1,4 +1,6 @@
-﻿namespace MyProjectTemplate.WebAPI;
+﻿using Scalar.AspNetCore;
+
+namespace MyProjectTemplate.WebAPI;
 
 public static class ConfigurationApplication
 {
@@ -7,6 +9,7 @@ public static class ConfigurationApplication
         if (app.Environment.IsDevelopment())
         {
             app.MapOpenApi();
+            app.MapScalarApiReference();
         }
 
         app.UseHttpsRedirection();

@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using MediatR;
+using Microsoft.Extensions.DependencyInjection;
+using MyProjectTemplate.Application.Behaviors;
 
 namespace MyProjectTemplate.Application;
 
@@ -8,6 +10,7 @@ public static class ServiceRegistration
     {
         services.ConfigureMediatR();
         services.ConfigureAutoMapper();
+        services.ConfigureFluentValidation();
         
         return services;
     }
@@ -20,5 +23,10 @@ public static class ServiceRegistration
     private static void ConfigureAutoMapper(this IServiceCollection services)
     {
         services.AddAutoMapper(typeof(AssemblyReference).Assembly);
+    }
+    
+    private static void ConfigureFluentValidation(this IServiceCollection services)
+    {
+        services.AddTransient(typeof(IPipelineBehavior<,>), (typeof(ValidationBehaviors<,>)));
     }
 }

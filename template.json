@@ -1,7 +1,7 @@
 ﻿{
   "$schema": "http://json.schemastore.org/template",
-  "author": "Senin Adın",
-  "classifications": [ "Web API", "CQRS", "Microservices" ],
+  "author": "ahmetgonulates",
+  "classifications": [ "Web API", "CQRS" ],
   "identity": "MyProjectTemplate",
   "name": "MyProjectTemplate",
   "shortName": "mytemplate",

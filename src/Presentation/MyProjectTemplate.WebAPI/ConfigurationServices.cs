@@ -1,10 +1,13 @@
 ﻿using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.IdentityModel.Tokens;
 using MyProjectTemplate.Infrastructure;
 using MyProjectTemplate.Persistance;
 using MyProjectTemplate.Presentation;
 using MyProjectTemplate.Application;
+using MyProjectTemplate.WebAPI.Handlers;
+
 namespace MyProjectTemplate.WebAPI;
 
 public static class ConfigurationServices
@@ -35,7 +38,7 @@ public static class ConfigurationServices
         }).AddJwtBearer(options =>
         {
             options.RequireHttpsMetadata = false;
-            options.SaveToken = true;
+            options.SaveToken = true; 
             options.TokenValidationParameters = new TokenValidationParameters()
             {
                 ValidIssuer = configuration["JwtSettings:Issuer"],
@@ -49,6 +52,8 @@ public static class ConfigurationServices
         });
 
         services.AddAuthorization();
+
+        services.AddSingleton<IAuthorizationMiddlewareResultHandler, CustomAuthorizationMiddlewareResultHandler>();
 
         return services;
     }

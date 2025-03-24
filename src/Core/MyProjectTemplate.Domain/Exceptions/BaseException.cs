@@ -6,10 +6,10 @@ public abstract class BaseException : Exception
     {
         StatusCode = statusCode;
         ErrorCode = errorCode;
-        Message = message;
+        ErrorMessage = message;
     }
 
     public int StatusCode { get; set; }
     public string ErrorCode { get; set; }
-    public string Message { get; set; }
+    public string ErrorMessage { get; set; }
 }

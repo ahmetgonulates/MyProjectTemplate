@@ -6,9 +6,8 @@ namespace MyProjectTemplate.Presentation.Controllers;
 public class TestController(IMediator mediator) : ApiController(mediator)
 {
     [HttpGet]
-    public async Task<IActionResult> GetAsync()
+    public IActionResult GetAsync()
     {
-
-        return Ok("Api Calisiyor.");
+        return Ok("qwe");
     }
 }
