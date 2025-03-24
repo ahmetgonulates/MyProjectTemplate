@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "JntG2PXgvAVpcB7ry2+XitZG0/7uENjI19OC/p4Den0=",
+  "Source": "MyProjectTemplate.WebAPI",
+  "BasePath": "_content/MyProjectTemplate.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

@@ -1,0 +1,12 @@
+C:\ATG\Calismalar\MyProjectTemplate\src\Core\MyProjectTemplate.Domain\bin\Debug\net9.0\MyProjectTemplate.Domain.deps.json
+C:\ATG\Calismalar\MyProjectTemplate\src\Core\MyProjectTemplate.Domain\bin\Debug\net9.0\MyProjectTemplate.Domain.dll
+C:\ATG\Calismalar\MyProjectTemplate\src\Core\MyProjectTemplate.Domain\bin\Debug\net9.0\MyProjectTemplate.Domain.pdb
+C:\ATG\Calismalar\MyProjectTemplate\src\Core\MyProjectTemplate.Domain\obj\Debug\net9.0\MyProjectTemplate.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\ATG\Calismalar\MyProjectTemplate\src\Core\MyProjectTemplate.Domain\obj\Debug\net9.0\MyProjectTemplate.Domain.AssemblyInfoInputs.cache
+C:\ATG\Calismalar\MyProjectTemplate\src\Core\MyProjectTemplate.Domain\obj\Debug\net9.0\MyProjectTemplate.Domain.AssemblyInfo.cs
+C:\ATG\Calismalar\MyProjectTemplate\src\Core\MyProjectTemplate.Domain\obj\Debug\net9.0\MyProjectTemplate.Domain.csproj.CoreCompileInputs.cache
+C:\ATG\Calismalar\MyProjectTemplate\src\Core\MyProjectTemplate.Domain\obj\Debug\net9.0\MyProjectTemplate.Domain.sourcelink.json
+C:\ATG\Calismalar\MyProjectTemplate\src\Core\MyProjectTemplate.Domain\obj\Debug\net9.0\MyProjectTemplate.Domain.dll
+C:\ATG\Calismalar\MyProjectTemplate\src\Core\MyProjectTemplate.Domain\obj\Debug\net9.0\refint\MyProjectTemplate.Domain.dll
+C:\ATG\Calismalar\MyProjectTemplate\src\Core\MyProjectTemplate.Domain\obj\Debug\net9.0\MyProjectTemplate.Domain.pdb
+C:\ATG\Calismalar\MyProjectTemplate\src\Core\MyProjectTemplate.Domain\obj\Debug\net9.0\ref\MyProjectTemplate.Domain.dll

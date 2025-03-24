@@ -1,0 +1,16 @@
+C:\ATG\Calismalar\MyProjectTemplate\src\Core\MyProjectTemplate.Application\bin\Debug\net9.0\MyProjectTemplate.Application.deps.json
+C:\ATG\Calismalar\MyProjectTemplate\src\Core\MyProjectTemplate.Application\bin\Debug\net9.0\MyProjectTemplate.Application.dll
+C:\ATG\Calismalar\MyProjectTemplate\src\Core\MyProjectTemplate.Application\bin\Debug\net9.0\MyProjectTemplate.Application.pdb
+C:\ATG\Calismalar\MyProjectTemplate\src\Core\MyProjectTemplate.Application\bin\Debug\net9.0\MyProjectTemplate.Domain.dll
+C:\ATG\Calismalar\MyProjectTemplate\src\Core\MyProjectTemplate.Application\bin\Debug\net9.0\MyProjectTemplate.Domain.pdb
+C:\ATG\Calismalar\MyProjectTemplate\src\Core\MyProjectTemplate.Application\obj\Debug\net9.0\MyProjectTemplate.Application.csproj.AssemblyReference.cache
+C:\ATG\Calismalar\MyProjectTemplate\src\Core\MyProjectTemplate.Application\obj\Debug\net9.0\MyProjectTemplate.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\ATG\Calismalar\MyProjectTemplate\src\Core\MyProjectTemplate.Application\obj\Debug\net9.0\MyProjectTemplate.Application.AssemblyInfoInputs.cache
+C:\ATG\Calismalar\MyProjectTemplate\src\Core\MyProjectTemplate.Application\obj\Debug\net9.0\MyProjectTemplate.Application.AssemblyInfo.cs
+C:\ATG\Calismalar\MyProjectTemplate\src\Core\MyProjectTemplate.Application\obj\Debug\net9.0\MyProjectTemplate.Application.csproj.CoreCompileInputs.cache
+C:\ATG\Calismalar\MyProjectTemplate\src\Core\MyProjectTemplate.Application\obj\Debug\net9.0\MyProjectTemplate.Application.sourcelink.json
+C:\ATG\Calismalar\MyProjectTemplate\src\Core\MyProjectTemplate.Application\obj\Debug\net9.0\MyProjec.6914B6F4.Up2Date
+C:\ATG\Calismalar\MyProjectTemplate\src\Core\MyProjectTemplate.Application\obj\Debug\net9.0\MyProjectTemplate.Application.dll
+C:\ATG\Calismalar\MyProjectTemplate\src\Core\MyProjectTemplate.Application\obj\Debug\net9.0\refint\MyProjectTemplate.Application.dll
+C:\ATG\Calismalar\MyProjectTemplate\src\Core\MyProjectTemplate.Application\obj\Debug\net9.0\MyProjectTemplate.Application.pdb
+C:\ATG\Calismalar\MyProjectTemplate\src\Core\MyProjectTemplate.Application\obj\Debug\net9.0\ref\MyProjectTemplate.Application.dll
