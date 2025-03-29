@@ -15,7 +15,10 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Infrastructure\MyProjectTemplate.Infrastructure\MyProjectTemplate.Infrastructure.csproj" />
     <ProjectReference Include="..\..\Infrastructure\MyProjectTemplate.Persistance\MyProjectTemplate.Persistance.csproj" />
-    <ProjectReference Include="..\..\Infrastructure\MyProjectTemplate.Presentation\MyProjectTemplate.Presentation.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>

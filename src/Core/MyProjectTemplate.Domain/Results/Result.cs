@@ -9,9 +9,9 @@ public class Result
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     public Error? Error { get; }
 
-    protected Result()
+    protected Result(int statusCode)
     {
-        StatusCode = 200;
+        StatusCode = statusCode;
         IsSuccess = true;
         Error = default;
     }
@@ -23,7 +23,9 @@ public class Result
         Error = error;
     }
     
-    public static Result Success() => new();
+    public static Result Success() => new(200);
+    public static Result Created() => new(201);
+    public static Result NoContent() => new(204);
 
     public static Result Failure(Error error) => new(error);
     

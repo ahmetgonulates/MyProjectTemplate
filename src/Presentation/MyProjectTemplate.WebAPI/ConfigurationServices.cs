@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.IdentityModel.Tokens;
 using MyProjectTemplate.Infrastructure;
 using MyProjectTemplate.Persistance;
-using MyProjectTemplate.Presentation;
 using MyProjectTemplate.Application;
 using MyProjectTemplate.WebAPI.Handlers;
 
@@ -14,7 +13,7 @@ public static class ConfigurationServices
 {
     public static IServiceCollection ConfigureServices(this IServiceCollection services, IConfiguration configuration)
     {
-        services.AddControllers().AddApplicationPart(typeof(MyProjectTemplate.Presentation.AssemblyReference).Assembly);
+        services.AddControllers();
 
         services.AddOpenApi();
         

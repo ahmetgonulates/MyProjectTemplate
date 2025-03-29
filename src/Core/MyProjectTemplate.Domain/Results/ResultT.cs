@@ -4,7 +4,7 @@ public sealed class ResultT<TValue> : Result
 {
     private readonly TValue? _value;
 
-    private ResultT(TValue value) : base()
+    private ResultT(TValue value) : base(200)
     {
         _value = value;
     }

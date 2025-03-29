@@ -23,8 +23,7 @@ public sealed class ValidationBehaviors<TRequest, TResponse> : IPipelineBehavior
             return await next();
 
         var context = new ValidationContext<TRequest>(request);
-        var errorDictionary = _validators
-            .Select(x => x.Validate(context))
+        var errorDictionary = _validators.Select(x => x.Validate(context))
             .SelectMany(x => x.Errors)
             .Where(x => x is not null)
             .GroupBy(x => x.PropertyName, x => x.ErrorMessage, (propertyName, errorMessage) => new
@@ -35,15 +34,7 @@ public sealed class ValidationBehaviors<TRequest, TResponse> : IPipelineBehavior
             .ToDictionary(x => x.Key, x => x.Values[0]);
 
         if (errorDictionary.Any())
-        {
-            var errors = errorDictionary.Select(x => new ValidationFailure()
-            {
-                PropertyName = x.Value,
-                ErrorCode = x.Key
-            });
-
-            throw new BadRequestException("40000", string.Join(",", errors.Select(x => x.ErrorMessage)));
-        }
+            throw new BadRequestException("400", errorDictionary.First().Value);
 
         return await next();
     }
