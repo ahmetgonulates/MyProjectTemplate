@@ -1,10 +1,13 @@
 ﻿using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using MyProjectTemplate.Infrastructure;
 using MyProjectTemplate.Persistance;
 using MyProjectTemplate.Application;
+using MyProjectTemplate.Domain.Exceptions;
+using MyProjectTemplate.Infrastructure.Configurations;
 using MyProjectTemplate.WebAPI.Handlers;
 
 namespace MyProjectTemplate.WebAPI;
@@ -14,7 +17,8 @@ public static class ConfigurationServices
     public static IServiceCollection ConfigureServices(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddControllers();
-
+        services.ConfigureOptionsPattern(configuration);
+        
         services.AddOpenApi();
         
         services.AddApplicationServices();
@@ -22,6 +26,7 @@ public static class ConfigurationServices
         services.AddPersistanceServices(configuration);
 
         services.ConfigureAuthentication(configuration);
+        services.ConfigureExceptionHandler();
         
         return services;
     }
@@ -55,5 +60,23 @@ public static class ConfigurationServices
         services.AddSingleton<IAuthorizationMiddlewareResultHandler, CustomAuthorizationMiddlewareResultHandler>();
 
         return services;
+    }
+    
+    private static void ConfigureExceptionHandler(this IServiceCollection services)
+    {
+        services.Configure<ApiBehaviorOptions>(options =>
+        {
+            options.InvalidModelStateResponseFactory = context =>
+            {
+                var errors = context.ModelState.FirstOrDefault(x => x.Value.Errors.Count > 0);
+                throw new BadRequestException("400999", errors.Value.Errors[0].ErrorMessage);
+            };
+        });
+        services.AddExceptionHandler<ExceptionHandler>();
+    }
+    
+    private static void ConfigureOptionsPattern(this IServiceCollection services, IConfiguration configuration)
+    {
+        services.Configure<JwtSettings>(configuration.GetSection("JwtSettings"));
     }
 }
